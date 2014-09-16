@@ -14,12 +14,11 @@
 <div class="Contentss">
 <div class="Adoptables">
 	 <div ng-controller="CatCtrl">
-	<div class="cat-listhtml">
-		<div data-ng-repeat="cat in cats">	
-		<h1>{{cat.name}}</h1>
-		<img ng-src="{{cat.pic1}}">
-		<p>{{cat.description}}</p>
-		</div>
+			<div class="cat-listhtml" data-ng-repeat="cat in cats">	<h4>{{cat.name}}</h4>
+			  <h5>{{cat.age}}</h5>
+			  <img ng-src="{{cat.pic1}}">
+			  <p>{{cat.description}}</p>
+			</div>
 </div>
 </div>
 
@@ -31,4 +30,4 @@
 <div class="footer">
 </div>
 </div>
-</div>
+

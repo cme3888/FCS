@@ -1,0 +1,11 @@
+.cat-listhtml{
+	width:200px;
+	display:inline-block;
+}
+.cat-listhtml img{
+  height:100px;
+  width:100px;
+  border-radius: 100%;
+ 
+}
+

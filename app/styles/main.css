@@ -93,5 +93,21 @@ body{
   color:white;
 
 }
+.col-md-3{
+  text-indent: 10px;
+ 
+
+}
+.col-md-3 img{
+  height:100px;
+  width:100px;
+  border-radius: 100%;
+
+}
+.col-md-9{
+
+
+}
+
 
 
