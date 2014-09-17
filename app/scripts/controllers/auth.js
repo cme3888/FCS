@@ -12,7 +12,7 @@ app.controller('AuthCtrl',
 
     $scope.login = function () {
       Auth.login($scope.user).then(function () {
-        $location.path('/patientdash');
+        $location.path('/login');
       }, function (error) {
         $scope.error = error.toString();
       });

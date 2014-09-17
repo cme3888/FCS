@@ -1,18 +1,21 @@
-app.controller('CatCtrl', function ($scope, $location, Cat) {
+app.controller('CatCtrl',  function ($scope, Cat) {
+  
   $scope.cats = Cat.all;
 
-  $scope.newCat = {note: '', 'title': ''};
+  $scope.newCat = {'pic':'','name':'', 'age':'', 'description': ''};
 
    $scope.submitCat = function () {
-      console.log($scope.newCat);
-      Cat.create($scope.newCat).then(function (ref) {
-
-        $scope.newCat = {note: '', title: '', date: ''};
+      Cat
+      .create($scope.newCat)
+      .then(function (ref) {
+            $scope
+            .newCat = {'pic':'','name': '', 'age': '', 'description': ''};
       });
     };
 
-  $scope.deleteCat = function (catId) {
-     Cat.delete(catId);
+  $scope.deleteCat = function (Id) {
+     Cat
+     .delete(Id);
   };
 
 });
